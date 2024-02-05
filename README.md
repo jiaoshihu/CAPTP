@@ -11,13 +11,13 @@ Peptides offer significant therapeutic potential for treating a wide range of di
 
 Before running, please make sure the following packages are installed in Python environment:
 
-python==3.8
+python==3.8.16
 
-pytorch==1.13.1
+pytorch==2..0
 
-numpy==1.24.2
+numpy==1.24.3
 
-pandas==1.5.3
+pandas==2.0.1
 
 
 
