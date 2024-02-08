@@ -41,7 +41,8 @@ def model_eval(test_data, model):
             pred_class = pred_prob_sort[1]
             label_pred = torch.cat([label_pred, pred_class.float()])
             pred_prob = torch.cat([pred_prob, pred_prob_positive])
-    return label_pred.numpy(),pred_prob.numpy()
+    return label_pred.cpu().numpy(), pred_prob.cpu().numpy()
+
 
 def load_text_file(fast_file):
     with open(fast_file) as f:
